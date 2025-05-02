@@ -1,0 +1,462 @@
+Lbl A1:ClrHome
+Menu(" Interpretations: ","1 Var Data",B1,"2 Var Data",C1,"Prob, Rand V, Prob Dist",D1,"Samp Dist",E1,"Prop, Mean, Slope",F1,"Quit",ZZ)
+
+Lbl B1:ClrHome
+Menu("1 Var Data","Std Dev",BA,"Percentile",BB,"Z Score",BC,"Describe Dist",ZY,"Main",A1)
+
+Lbl BA:ClrHome
+Disp "The *context* typically"
+Disp "varies by *SD* from"
+Disp "the mean of *mean*."
+Pause 
+ClrHome 
+Disp "Example:"
+Disp "The *height of power"
+Disp "forwards in the NBA*"
+Disp "typically varies by"
+Disp "*1.52* inches from the"
+Disp "mean of *80.1* inches."
+Pause 
+Goto B1
+
+Lbl BB:ClrHome
+Disp "*percentile*% of *context*"
+Disp "are less than or equal"
+Disp "to *value*."
+Pause 
+ClrHome
+Disp "Example:"
+Disp "*75*% of *high school"
+Disp "student SAT scores* are"
+Disp "less than or equal to"
+Disp "*1200*."
+Pause 
+Goto B1
+
+Lbl BC:ClrHome
+Disp "*Specific value with"
+Disp "CONTEXT* is *z-score*"
+Disp "standard deviations "
+Disp "*above/below* the mean."
+Pause 
+ClrHome
+Disp "Example:"
+Disp "*A quiz score of 71* is"
+Disp "*1.43* standard deviations"
+Disp "*below* the mean."
+Disp "(z = -1.43)"
+Pause 
+Goto B1
+
+Lbl ZY:ClrHome
+Disp "S - Shape"
+Disp "O - Outliers"
+Disp "C - Center"
+Disp "V - Variability"
+Disp "+ Context"
+Pause 
+Goto B1
+
+
+
+Lbl C1:ClrHome
+Menu("2 Var Data","Correlation (r)",CA,"Residual",CB,"y-intercept",CC,"Slope",CD,"SD of residuals",CE,"Coef of Determ.. (r²)",CF,"Describe Relationship",CG,"Main",A1)
+
+Lbl CA:ClrHome
+Disp "The linear association"
+Disp "between *x-context* and"
+Disp "*y-context* is"
+Disp "*weak/moderate/strong"
+Disp "(strength)* and *positive"
+Disp "/negative (direction)*."
+Pause 
+ClrHome
+Disp "Example:"
+Disp "The linear association"
+Disp "between *student absences*"
+Disp "and *final grades* is"
+Disp "*fairly strong* and 
+Disp "*negative* (r = -0.93)"
+Pause 
+Goto C1
+
+Lbl CB:ClrHome
+Disp "The actual *y-context* was"
+Disp "*residual* *above/below*"
+Disp "the predicted value when"
+Disp "*x-context = #*."
+Pause 
+ClrHome
+Disp "Example:"
+Disp "The actual *heart rate*"
+Disp "was *4.5 beats per minute*"
+Disp "*above* the number"
+Disp "predicted when *Matt ran"
+Disp "for 5 minutes*."
+Pause 
+Goto C1
+
+Lbl CC:ClrHome
+Disp "The predicted *y-context*"
+Disp "when *x = 0 context* is"
+Disp "*y-intercept*."
+Pause 
+ClrHome
+Disp "Example:"
+Disp "The predicted *time to"
+Disp "checkout at the grocery"
+Disp "store* when there are *0"
+Disp "customers in line* is"
+Disp "*72.95 seconds*"
+Pause 
+Goto C1
+
+Lbl CD:ClrHome
+Disp "The predicted *y-context*"
+Disp "*increases/decreases* by"
+Disp "*slope* for each"
+Disp "additional *x-context*."
+Pause 
+ClrHome
+Disp "Example:"
+Disp "The predicted *heart rate"
+Disp "rate increases by *4.3*"
+Disp "beats per minute* for each" 
+Disp "additional *minute jogged*"
+Pause 
+Goto C1
+
+Lbl CE:ClrHome
+Disp "The actual *y-context*"
+Disp "is typically about *s*"
+Disp "away from the value"
+Disp "predicted by the LSRL."
+Pause 
+ClrHome
+Disp "Example:"
+Disp "The actual *SAT score*"
+Disp "is typically about *14.3*"
+Disp "points away from the"
+Disp "value predicted by the"
+Disp "LSRL."
+Pause 
+Goto C1
+
+Lbl CF:ClrHome
+Disp "..ination"
+Disp "About *r²*% of the"
+Disp "variation in *y-context*"
+Disp "can be explained by the"
+Disp "linear relationship with"
+Disp "*x-context*."
+Pause 
+ClrHome
+Disp "Example:"
+Disp "About *87.3*% of variation"
+Disp "in *electricity production"
+Disp "is explained by the"
+Disp "linear relationship with"
+Disp "*wind speed*."
+Pause 
+Goto C1
+
+Lbl CG:ClrHome
+Disp "D - Direction"
+Disp "U - Unusual Points"
+Disp "F - Form"
+Disp "S - Strength"
+Disp "+Context"
+Pause 
+Goto C1
+
+
+Lbl D1:ClrHome
+Menu("Prob, Rand V, Prob Dist","Probability",DA,"Cond Prob",DB,"Expected Value",DC,"Binomial Mean",DD,"Binomial SD",DE,"Main",A1)
+
+Lbl DA:ClrHome
+Disp "After many, many"
+Disp "*context*, the"
+Disp "proportion of times"
+Disp "that *context A* will"
+Disp "occur is about *P(A)*."
+Pause 
+ClrHome
+Disp "Example:"
+Disp "P(heads)=0.5."
+Disp "After many, many"
+Disp "coin flips, the"
+Disp "proportion of"
+Disp "times that heads"
+Disp "will occur is"
+Disp "about *0.5*."
+Pause 
+Goto D1
+
+Lbl DB:ClrHome
+Disp "Given *context B*,"
+Disp "there is a *P(A|B)*"
+Disp "prob of *context A*."
+Pause 
+ClrHome
+Disp "Example:"
+Disp "P(red car|pulled over)=.48"
+Disp "Given that *a car is"
+Disp "pulled over*, there is a"
+Disp "*0.48* probability of"
+Disp "*the car being red*."
+Pause 
+Goto D1
+
+Lbl DC:ClrHome
+Disp "If the random process"
+Disp "of *context* is"
+Disp "repeated for a very"
+Disp "large number of times,"
+Disp "the average number of"
+Disp "*x-context* we can"
+Disp "expect is *expected value*"
+Pause 
+ClrHome
+Disp "Example:"
+Disp "If the random process"
+Disp "of *asking a student how"
+Disp "many movies they watched"
+Disp "this week* is repeated"
+Disp "for a very large number"
+Disp "of times, the average"
+Disp "number of *movies* is"
+Disp "*3.23*."
+Pause 
+Goto D1
+
+Lbl DD:ClrHome
+Disp "After many, many"
+Disp "trials the average #"
+Disp "of *success context*"
+Disp "out of *n* is *µ*."
+Pause 
+ClrHome
+Disp "Example:"
+Disp "After many, many trials"
+Disp "the average # of"
+Disp "*property crimes that"
+Disp "go unsolved* out of"
+Disp "*100* is *80*."
+Pause 
+Goto D1
+
+Lbl DE:ClrHome
+Disp "The number of"
+Disp "*success context* out"
+Disp "of *n* typically"
+Disp "varies by *σ* from"
+Disp "the mean of *µ*."
+Pause 
+ClrHome
+Disp "Example:"
+Disp "The number of *property"
+Disp "crimes that go unsolved*"
+Disp "out of *100* typically"
+Disp "varies by *1.6 crimes*"
+Disp "from the mean of *80*."
+Pause 
+Goto D1
+
+Lbl E1:ClrHome
+Menu("Samp Dist","SD of prop",EA,"SD of means",EB,"Main",A1)
+
+Lbl EA:ClrHome
+Disp "The sample proportion of"
+Disp "*success context*"
+Disp "typically varies by *σ_p*"
+Disp "from the true proportion"
+Disp "of *p*."
+Pause 
+ClrHome
+Disp "Example:"
+Disp "The sample proportion of"
+Disp "*students that did their"
+Disp "AP Stats homework last"
+Disp "night* typically varies by"
+Disp "*0.12* from the true"
+Disp "proportion of *0.73*."
+Pause 
+Goto E1
+
+Lbl EB:ClrHome
+Disp "The sample mean amount"
+Disp "of *x-context* typically"
+Disp "varies by *σ_*"
+Disp "from the true mean of *µ*"
+Pause 
+ClrHome
+Disp "Example:"
+Disp "The sample mean amount"
+Disp "of *defective parts*"
+Disp "typically varies by"
+Disp "*5.6 parts* from the true"
+Disp "mean of *23.2 parts*."
+Pause 
+Goto E1
+
+
+Lbl F1:ClrHome
+Menu("Prop, Mean, Slope","Conf Interval",FA,"Conf Level",FB,"p-value",FC,"Test Conclusion",FD,"Type I Error",FE,"Type II Error",FF,"Power",FG,"SE of Slope",FH,"Main",A1)
+
+Lbl FA:ClrHome
+Disp "We are *CL*% confident"
+Disp "that the interval from"
+Disp "*A* to *B* captures"
+Disp "the true *parameter"
+Disp "context*."
+Pause 
+ClrHome
+Disp "Example:"
+Disp "We are *95*% confident"
+Disp "that the interval from"
+Disp "*0.23* to *0.27* captures"
+Disp "the true *proportion of"
+Disp "students who are"
+Disp "scared of Zumwalt*"
+Pause 
+Goto F1
+
+Lbl FB:ClrHome
+Disp "If we take many, many"
+Disp "samples of the same"
+Disp "size and calculate a"
+Disp "confidence interval"
+Disp "for each, about *CL*%"
+Disp "of them will capture"
+Disp "the true *parameter*."
+Pause 
+ClrHome
+Disp "Example:"
+Disp "If we take many, many"
+Disp "samples of size 20 and"
+Disp "calculate a confidence"
+Disp "interval for each,"        
+Disp "about *90*% of them will"
+Disp "capture the true *mean"
+Disp "number of students"
+Disp "Zumwalt makes cry"
+Disp "per class*"
+Pause 
+Goto F1
+
+Lbl FC:ClrHome
+Disp "Assuming *H0 context*,"
+Disp "there is a *p-value*"
+Disp "probability of getting"
+Disp "the *observed result*"
+Disp "of *less/greater/more 
+Disp "extreme* purely"
+Disp "by chance."
+Pause 
+ClrHome
+Disp "Example:"
+Disp "Assuming *mean body temp"
+Disp "is 98.6°F (H0: µ=98.6)*"
+Disp "there is a *0.023*"
+Disp "probability of getting"
+Disp "a *sample mean of 97.9°F*"
+Disp "or *less* by chance."
+Pause 
+Goto F1
+
+Lbl FD:ClrHome
+Disp "Because p-value *</>*"
+Disp "*α*, we *reject/fail*"
+Disp "to reject* H0."
+Disp "We *do/do not* have"
+Disp "convincing evidence for"
+Disp "*Ha incontext*."
+Pause 
+ClrHome
+Disp "Example:"
+Disp "Because the p-value"
+Disp "*0.023 < 0.05*, we 
+Disp "*reject* H0."
+Disp "We *do* have convincing"
+Disp "evidence that *the mean"
+Disp "body temp is less than"
+Disp "98.6°F*."
+Pause 
+Goto F1
+
+Lbl FE:ClrHome
+Disp "The *H0 context* is true,"   
+Disp "but we find convincing"
+Disp "evidence for *Ha context*."
+Pause 
+ClrHome
+Disp "Example:"
+Disp "The *mean body temp* is"
+Disp "actually 98.6F, but we"
+Disp "find convincing evidence"
+Disp "*the mean body temp is"
+Disp "less than 98.6F*."
+Pause 
+Goto F1
+
+Lbl FF:ClrHome
+Disp "The *Ha context* is true,"
+Disp "but we don't find"
+Disp "convincing evidence"
+Disp "to reject *H0 context*"
+Pause 
+ClrHome
+Disp "Example:"
+Disp "The *mean body temp is"
+Disp "actually less than"
+Disp "98.6F*, but we don't"
+Disp "find convincing evidence"
+Disp "that *the mean body"
+Disp "temp is less than"
+Disp "98.6F*."
+Pause 
+Goto F1
+
+Lbl FG:ClrHome
+Disp "If *Ha context is true"
+Disp "at a specific value*,"
+Disp "there is a *power*"
+Disp "probability the test"
+Disp "will correctly reject"
+Disp "H0 *context*."
+Pause 
+ClrHome
+Disp "Example:"
+Disp "If *the true mean body"
+Disp "temp is 97.5F*, there"
+Disp "is a *0.73* probability"
+Disp "the test will correctly"
+Disp "reject H0: µ=98.6."
+Pause 
+Goto F1
+
+Lbl FH:ClrHome
+Disp "The slope of the sample"
+Disp "LSRL for *x-context* and"
+Disp "*y-context* typically"
+Disp "varies by *SEb* from the"
+Disp "slope of the population"
+Disp "LSRL."
+Pause 
+ClrHome
+Disp "Example:"
+Disp "The slope of the sample"
+Disp "LSRL for *hours of
+Disp "physics homework* and"
+Disp "*the number of students"
+Disp "who are mad at Zumwalt*"
+Disp "typically varies"
+Disp "by about *4.3*"
+Disp "hours/# students."
+Pause 
+Goto F1
+
+
+
+Lbl ZZ
+Disp "Reject that H0!"
